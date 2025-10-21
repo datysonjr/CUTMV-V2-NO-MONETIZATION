@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 96%);  /* Light gray background like Full Digital */
+  --foreground: hsl(0, 0%, 9%);   /* Near black text */
+  --muted: hsl(0, 0%, 90%);
+  --muted-foreground: hsl(0, 0%, 45%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(0, 0%, 9%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(0, 0%, 9%);
+  --border: hsl(0, 0%, 85%);
+  --input: hsl(0, 0%, 85%);
+  --primary: hsl(85, 70%, 55%);    /* Full Digital bright green */
+  --primary-foreground: hsl(0, 0%, 9%);
+  --secondary: hsl(0, 0%, 94%);
+  --secondary-foreground: hsl(0, 0%, 9%);
+  --accent: hsl(85, 70%, 55%);     /* Same bright green for accents */
+  --accent-foreground: hsl(0, 0%, 9%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(85, 70%, 55%);       /* Green focus rings */
+  --radius: 0.5rem;
+  
+  /* Full Digital inspired brand colors */
+  --brand-green: hsl(85, 70%, 55%);      /* Full Digital bright green */
+  --brand-green-dark: hsl(85, 80%, 45%); /* Darker variant */
+  --brand-green-light: hsl(85, 60%, 65%); /* Lighter variant */
+  --brand-black: hsl(0, 0%, 9%);          /* Deep black for headers */
+}
+
+.dark {
+  --background: hsl(0, 0%, 9%);    /* Deep black background */
+  --foreground: hsl(0, 0%, 98%);   /* White text */
+  --muted: hsl(0, 0%, 15%);
+  --muted-foreground: hsl(0, 0%, 65%);
+  --popover: hsl(0, 0%, 9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(0, 0%, 9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(0, 0%, 20%);
+  --input: hsl(0, 0%, 20%);
+  --primary: hsl(85, 70%, 55%);    /* Same bright green in dark mode */
+  --primary-foreground: hsl(0, 0%, 9%);
+  --secondary: hsl(0, 0%, 15%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(85, 70%, 55%);
+  --accent-foreground: hsl(0, 0%, 9%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(85, 70%, 55%);
+  --radius: 0.5rem;
+  
+  /* Full Digital brand colors for dark mode */
+  --brand-green: hsl(85, 70%, 55%);
+  --brand-green-dark: hsl(85, 80%, 45%);
+  --brand-green-light: hsl(85, 60%, 65%);
+  --brand-black: hsl(0, 0%, 9%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-brand-green {
+    color: var(--brand-green);
+  }
+  
+  .bg-brand-green {
+    background-color: var(--brand-green);
+  }
+  
+  .bg-brand-black {
+    background-color: var(--brand-black);
+  }
+  
+  .hover\:bg-brand-green-dark:hover {
+    background-color: var(--brand-green-dark);
+  }
+  
+  .border-brand-green {
+    border-color: var(--brand-green);
+  }
+  
+  .hover\:border-brand-green:hover {
+    border-color: var(--brand-green);
+  }
+  
+  .focus\:ring-brand-green:focus {
+    --tw-ring-color: var(--brand-green);
+  }
+}

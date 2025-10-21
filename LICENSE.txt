@@ -1,0 +1,22 @@
+PROPRIETARY SOFTWARE LICENSE
+
+© 2025 Full Digital LLC. All Rights Reserved.
+
+CUTMV - Music Video Cut-Down Tool
+
+This software and its source code are the exclusive property of Full Digital LLC. 
+
+TERMS OF USE:
+1. This software is provided for authorized use only
+2. Reverse engineering, decompilation, or disassembly is strictly prohibited
+3. Redistribution, copying, or sharing of any part of this software is forbidden
+4. Users may not create derivative works based on this software
+5. All intellectual property rights remain with Full Digital LLC
+6. Unauthorized use may result in legal action
+
+By using this software, you acknowledge that you have read, understood, and agree to be bound by these terms.
+
+For licensing inquiries, contact: Full Digital LLC
+Website: https://fulldigitalll.com
+
+VIOLATION OF THESE TERMS CONSTITUTES COPYRIGHT INFRINGEMENT AND MAY RESULT IN CIVIL AND CRIMINAL PENALTIES.
